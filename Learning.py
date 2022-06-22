@@ -237,3 +237,37 @@ else:
     planet = "Neptune"
 
 print("You are going to " + planet + ", which has a weight of " + str(weight))
+
+# Sal's Shipping
+
+# Weight
+weight = input("How much does your package weigh? ")
+
+# Ground Shipping
+ground_price = 20
+if weight <= 2:
+  ground_price = (weight * 1.5) + 20
+elif weight <= 6:
+  ground_price = (weight * 3) + 20
+elif weight <= 10:
+  ground_price = (weight * 4) + 20
+else:
+  ground_price = (weight * 4.75) + 20
+
+# Ground Shipping Premium
+ground_premium_price = 125
+
+# Drone Shipping
+if weight <= 2:
+  drone_price = weight * 4.5
+elif weight <= 6:
+  drone_price = weight * 9
+elif weight <= 10:
+  drone_price = weight * 12
+else:
+  drone_price = weight * 14.25
+
+# Compare to see which is the cheapest shipping solution
+print("Drone:", drone_price)
+print("Ground:", ground_price)
+print("Ground Premium:", ground_premium_price)

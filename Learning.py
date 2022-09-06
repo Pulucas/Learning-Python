@@ -381,5 +381,122 @@ customer_data[1].remove(False)
 customer_data_final = customer_data + [["Amit", "Large", True], ["Karim", "X-Large", False]]
 print(customer_data_final)
 
+# Python List Methods
+# .count - a list method to count the current number of occurrences of an element in a list.
+# .insert - a list method to insert an element into a specific index of a list.
+# .pop - a list method to remove an element from a specific index or from the end of a list.
+# range() - A built-in Python function to create a sequence of integers.
+# len() - A built-in Python function to get the length of a list.
+# .sort() / sorted() - A method and a built-in function to sort a list.
+
+# Adding by index: Insert
+front_display_list = ["Mango", "Filet Mignon", "Chocolate Milk"]
+print(front_display_list)
+
+# Your code below: 
+front_display_list.insert(0, "Pineapple")
+print(front_display_list)
+
+# Removing by index: Pop
+data_science_topics = ["Machine Learning", "SQL", "Pandas", "Algorithms", "Statistics", "Python 3"]
+print(data_science_topics)
+
+# Your code below: 
+data_science_topics.pop()
+print(data_science_topics)
+data_science_topics.pop(-2)
+print(data_science_topics)
+
+# Consecutive Lists: Range
+my_range = range(10)
+my_range_listed = list(my_range)
+print(my_range)
+print(my_range_listed)
+# Your code below: 
+
+number_list = range(9)
+print(list(number_list))
+zero_to_seven = range(8)
+print(list(zero_to_seven))
+
+# The Power Of Range!
+range_five_three = range(5, 15, 3)
+range_diff_five = range(0, 40, 5)
+
+# Length
+long_list = [1, 5, 6, 7, -23, 69.5, True, "very", "long", "list", "that", "keeps", "going.", "Let's", "practice", "getting", "the", "length"]
+
+big_range = range(2, 3000, 100)
+
+# Your code below: 
+long_list_len = len(long_list)
+print(long_list_len)
+big_range_length = len(big_range)
+print(big_range_length)
+
+# Slicing Lists 1
+suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
+
+beginning = suitcase[0:2]
+middle = suitcase[2:4]
+
+# Your code below: 
+print(beginning)
+
+# Slicing Lists 2
+suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
+
+# Your code below: 
+last_two_elements = suitcase[-2:]
+print(last_two_elements)
+
+slice_off_last_three = suitcase[:-3]
+print(slice_off_last_three)
+
+# Counting in a list
+votes = ["Jake", "Jake", "Laurie", "Laurie", "Laurie", "Jake", "Jake", "Jake", "Laurie", "Cassie", "Cassie", "Jake", "Jake", "Cassie", "Laurie", "Cassie", "Jake", "Jake", "Cassie", "Laurie"]
+
+# Your code below: 
+jake_votes = votes.count("Jake")
+print(jake_votes)
+
+# Sortin Lists 1
+# Checkpoint 1 & 2
+addresses = ["221 B Baker St.", "42 Wallaby Way", "12 Grimmauld Place", "742 Evergreen Terrace", "1600 Pennsylvania Ave", "10 Downing St."]
+addresses.sort()
+print(addresses)
+
+# Checkpoint 3
+names = ["Ron", "Hermione", "Harry", "Albus", "Sirius"]
+names.sort()
+
+
+# Checkpoint 4 & 5
+cities = ["London", "Paris", "Rome", "Los Angeles", "New York"]
+cities.sort(reverse=True)
+print(cities)
+
+# Sorting Lists 2
+games = ["Portal", "Minecraft", "Pacman", "Tetris", "The Sims", "Pokemon"]
+
+# Your code below:
+games_sorted = sorted(games)
+print(games)
+print(games_sorted)
+
+# Review
+inventory = ["twin bed", "twin bed", "headboard", "queen bed", "king bed", "dresser", "dresser", "table", "table", "nightstand", "nightstand", "king bed", "king bed", "twin bed", "twin bed", "sheets", "sheets", "pillow", "pillow"]
+
+inventory_len = len(inventory)
+first = inventory[0]
+last = inventory[-1]
+inventory_2_6 = inventory[2:6]
+first_3 = inventory[:3]
+twin_beds = inventory.count("twin bed")
+removed_item = inventory.pop(4)
+inventory.insert(10, "19th Century Bed Frame")
+inventory.sort()
+print(inventory)
+
 print('''
 End Of Code''')

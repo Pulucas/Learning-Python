@@ -499,4 +499,23 @@ inventory.sort()
 print(inventory)
 
 print('''
+''')
+# Tuple Practice
+my_info = ('Lucas', '16', 'Student')
+name, age, occupation = my_info
+print(my_info[-1])
+print(name)
+# Produces Error:
+# my_info[0] = 'Lart'
+# one element tuples will return what inside the parenthases because parenthases are used in order of operations in math
+# For example:
+mathOperation = (5+3) * 3
+print(mathOperation)
+one_element_tuple = (4)
+print(one_element_tuple)
+# As soon as it has the comma is when it becomes a tuple
+example_tuple = (4,)
+print(example_tuple)
+
+print('''
 End Of Code''')

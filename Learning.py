@@ -528,5 +528,122 @@ print(names_and_dogs_names)
 list_of_names_and_dogs_names = list(names_and_dogs_names)
 print(list_of_names_and_dogs_names)
 
+### LOOPS ###
+
+# Write 10 print() statements below! 
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+print("This can be so much easier with loops!")
+
+# For Loops Introduction
+board_games = ["Settlers of Catan", "Carcassone", "Power Grid", "Agricola", "Scrabble"]
+
+sport_games = ["football", "hockey", "baseball", "cricket"]
+
+for game in board_games:
+  print(game)
+
+for sport in sport_games:
+  print(sport)
+
+# For loops using range
+promise = "I will finish the python loops module!"
+
+for promises in range(5):
+  print(promise)
+
+# While Loops Introduction
+# While Loop Walkthrough
+count = 0
+print("Starting While Loop")
+while count <= 3:
+  # Loop Body
+  # Print if the condition is still true
+  print("Loop Iteration - count <= 3 is still true")
+  # Print the current value of count 
+  print("Count is currently " + str(count))
+  # Increment count
+  count += 1
+  print(" ----- ")
+print("While Loop ended")
+
+# Your code below: 
+countdown = 10
+while countdown >=0:
+  print("We have liftoff!")
+  countdown -= 1
+
+countdown = 10  
+while countdown >= 0:
+    print(countdown)
+    countdown -= 1
+
+countdown = 100
+while countdown >=0:
+  print(countdown)
+  countdown -= 1
+print("We have liftoff!")
+
+'''# Personal Test (Infinite Loop)
+count = 0
+while count == 0:
+    print("hi")
+'''
+
+# While Loop Lists
+python_topics = ["variables", "control flow", "loops", "modules", "classes"]
+
+length = len(python_topics)
+index = 0
+
+#Your code below: 
+while index < length:
+  print("I am learning about " + str(python_topics[index]))
+  index += 1
+
+# Infinite loops  
+students_period_A = ["Alex", "Briana", "Cheri", "Daniele"]
+students_period_B = ["Dora", "Minerva", "Alexa", "Obie"]
+'''
+for student in students_period_A:
+  students_period_B.append(student)
+  print(student)
+print(students_period_B)
+'''
+
+# Loop Control: Break
+dog_breeds_available_for_adoption = ["french_bulldog", "dalmatian", "shihtzu", "poodle", "collie"]
+dog_breed_I_want = "dalmatian"
+
+for dog_breed in dog_breeds_available_for_adoption:
+  print(dog_breed)
+  if dog_breed == dog_breed_I_want:
+    print("They have the dog I want!")
+    break
+
+# Loop Control: Continue
+ages = [12, 38, 34, 26, 21, 19, 67, 41, 17]
+
+for legal_age in ages:
+  if legal_age < 21:
+    continue
+  print(legal_age)
+
+# Nested Loops
+sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+scoops_sold = 0
+for location in sales_data:
+  print(location)
+  for scoops in location:
+    scoops_sold += scoops
+print(scoops_sold)
+
 print('''
 End Of Code''')

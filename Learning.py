@@ -645,5 +645,27 @@ for location in sales_data:
     scoops_sold += scoops
 print(scoops_sold)
 
+# List Comprehensions: Introduction
+grades = [90, 88, 62, 76, 74, 89, 48, 57]
+scaled_grades = [num + 10 for num in grades]
+print(scaled_grades)
+
+# List Comprehensions: Conditionals
+heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+can_ride_coaster = [num for num in heights if num > 161]
+print(can_ride_coaster)
+
+# Review
+single_digits = range(10)
+squares = []
+cubes = [pow(num, 3) for num in single_digits]
+
+for digits in single_digits:
+  squares.append(pow(digits, 2))
+  print(digits)
+
+print(squares)
+print(cubes)
+
 print('''
 End Of Code''')
